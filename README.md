@@ -128,7 +128,7 @@ Header files (with the `.h` extension) are a fundamental part of C programming, 
   - Sometimes, the same header file (or its contents) can be used to generate both C and Verilog definitions, ensuring consistency between software and hardware.
 
 - **Learning Points in This Project:**
-  - I learned how to create and use custom header files for UART and GPIO register definitions.
+  - I learned how to create and use custom header files for UART and GPIO by using register definitions and Corsair.
   - I understood the importance of using structures and macros to map hardware registers in a portable and readable way.
   - I saw how header files help in scaling up projects, making it easier to add new peripherals or features.
   - I practiced using include guards to avoid redefinition errors.
