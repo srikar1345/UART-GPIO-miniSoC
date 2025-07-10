@@ -77,13 +77,13 @@ picoSoC_v3/
 - Example waveform (from GTKWave):
 
   ![UART waveform example](uart3.png)
+  ![UART Working Module Wise](WhatsApp Image 2025-07-10 at 17.32.23_4c508ea1.jpg)
+
 
 ### GPIO Output
 
 - The GPIO output toggles between `0x55` and `0xAA` in an infinite loop.
 - Example waveform:
-
-  ![GPIO waveform example](docs/gpio_waveform.png)
 
 ## Block Diagram
 
