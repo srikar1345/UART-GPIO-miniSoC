@@ -74,10 +74,12 @@ picoSoC_v3/
 ### UART Output
 
 - The `uart_tx` signal should show serial transmission of the string "Free Palestine!".
-- Example waveform (from GTKWave):
+- Example waveform :
 
   ![UART waveform example](uart3.png)
-  ![UART Working Module Wise](WhatsApp Image 2025-07-10 at 17.32.23_4c508ea1.jpg)
+- UART Working Module Wise:
+  
+  ![UART Working Module Wise](WhatsApp_Image_2025-07-10_at_17.32.23_4c508ea1.jpg)
 
 
 ### GPIO Output
