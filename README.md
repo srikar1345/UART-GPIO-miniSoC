@@ -79,7 +79,7 @@ picoSoC_v3/
   ![UART waveform example](uart3.png)
 - UART Working Module Wise:
   
-  ![UART Working Module Wise](WhatsApp_Image_2025-07-10_at_17.32.23_4c508ea1.jpg)
+  ![UART Working Module Wise](What.jpg)
 
 
 ### GPIO Output
