@@ -101,6 +101,41 @@ flowchart TD
 ## Analysis
 
 See [ANALYSIS.md](ANALYSIS.md) for a detailed explanation of each module and the simulation flow.
+## Header Files: What I Learned
+
+Header files (with the `.h` extension) are a fundamental part of C programming, especially in embedded systems and hardware-software co-design projects like this one. Here’s a detailed summary of what I learned about using header files in this project:
+
+- **Purpose of Header Files:**
+  - Header files allow you to declare functions, macros, constants, and data structures that can be shared across multiple C source files.
+  - They help organize code, promote reusability, and make large projects more manageable.
+
+- **Separation of Interface and Implementation:**
+  - By placing declarations in header files and implementations in `.c` files, you can separate the interface (what a module does) from its implementation (how it does it).
+  - This makes it easier to update or replace modules without affecting other parts of the code.
+
+- **Hardware Register Mapping:**
+  - In embedded projects, header files are often used to define memory-mapped register addresses and bitfields for peripherals like UART and GPIO.
+  - For example, `gpio_regs.h` and `uart_regs.h` in this project define structures and macros that let the C code access hardware registers using symbolic names instead of hardcoded addresses.
+
+- **Code Readability and Maintainability:**
+  - Using header files makes the code more readable and maintainable. Instead of magic numbers, you use meaningful names like `UCSR->U_DATA` or `GCSR->GPIO_0`.
+  - If the hardware design changes (e.g., register addresses are updated), you only need to update the header file, not every source file.
+
+- **Avoiding Redefinition and Multiple Inclusion:**
+  - Header files should use include guards (`#ifndef`, `#define`, `#endif`) to prevent multiple inclusion, which can cause compilation errors.
+
+- **Sharing Definitions Across Firmware and Hardware:**
+  - Sometimes, the same header file (or its contents) can be used to generate both C and Verilog definitions, ensuring consistency between software and hardware.
+
+- **Learning Points in This Project:**
+  - I learned how to create and use custom header files for UART and GPIO register definitions.
+  - I understood the importance of using structures and macros to map hardware registers in a portable and readable way.
+  - I saw how header files help in scaling up projects, making it easier to add new peripherals or features.
+  - I practiced using include guards to avoid redefinition errors.
+  - I realized that well-documented header files serve as a form of documentation for the hardware-software interface.
+  - I learned to appreciate the modularity and clarity that header files bring to embedded C projects.
+
+In summary, mastering header files is essential for efficient, maintainable, and scalable embedded system development. They bridge the gap between hardware and software, making it easier to write robust firmware that interacts with complex SoC designs like this one.
 
 ## License
 
