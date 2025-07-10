@@ -41,7 +41,7 @@ void delay_short()
 int main()
 {
 
-    uart_send_str("Free Palestine!");
+    uart_send_str("hello hyderabad!");
 
     GCSR->GPIO_0 = 0x55;
 
